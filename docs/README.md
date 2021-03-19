@@ -1,23 +1,25 @@
+---
+title: About MobX
+sidebar_label: About MobX
+hide_title: true
+---
+
 <img src="https://mobx.js.org/assets/mobx.png" alt="logo" height="120" align="right" />
 
 # MobX
 
 _Simple, scalable state management._
 
-[![npm version](https://badge.fury.io/js/mobx.svg)](https://badge.fury.io/js/mobx)
-[![OpenCollective](https://opencollective.com/mobx/backers/badge.svg)](docs/backers-sponsors.md#backers)
-[![OpenCollective](https://opencollective.com/mobx/sponsors/badge.svg)](docs/backers-sponsors.md#sponsors)
-
 [![Discuss on Github](https://img.shields.io/badge/discuss%20on-GitHub-orange)](https://github.com/mobxjs/mobx/discussions)
-[![View changelog](https://img.shields.io/badge/changelogs.xyz-Explore%20Changelog-brightgreen)](https://changelogs.xyz/mobx)
+[![npm version](https://badge.fury.io/js/mobx.svg)](https://badge.fury.io/js/mobx)
+[![OpenCollective](https://opencollective.com/mobx/backers/badge.svg)](backers-sponsors.md#backers)
+[![OpenCollective](https://opencollective.com/mobx/sponsors/badge.svg)](backers-sponsors.md#sponsors)
 
 ---
 
-> Documentation for older **unsupported** V4/V5 can be [found here](https://github.com/mobxjs/mobx/blob/mobx4and5/docs/README.md), but be sure to read about [current documentation first](https://mobx.js.org/about-this-documentation.html).
+MobX is made possible by the generosity of the sponsors below, and many other [individual backers](backers-sponsors.md#backers). Sponsoring directly impacts the longevity of this project.
 
-MobX is made possible by the generosity of the sponsors below, and many other [individual backers](docs/backers-sponsors.md#backers). Sponsoring directly impacts the longevity of this project.
-
-**🥇Gold sponsors (\$3000+ total contribution):** <br/>
+**🥇 Gold sponsors (\$3000+ total contribution):** <br/>
 <a href="https://mendix.com/"><img src="https://mobx.js.org/assets/mendix-logo.png" align="center" width="100" title="Mendix" alt="Mendix" /></a>
 <a href="https://frontendmasters.com/"><img src="https://mobx.js.org/assets/frontendmasters.jpg" align="center" width="100" title="Frontend Masters" alt="Frontend Masters"></a>
 <a href="https://opensource.facebook.com/"><img src="https://mobx.js.org/assets/fbos.jpeg" align="center" width="100" title="Facebook Open Source" alt="Facebook Open Source" /></a>
@@ -26,14 +28,14 @@ MobX is made possible by the generosity of the sponsors below, and many other [i
 <a href="https://coinbase.com/"><img src="https://mobx.js.org/assets/coinbase.jpeg" align="center" width="100" title="Coinbase" alt="Coinbase" /></a>
 <a href="https://www.canva.com/"><img src="https://mobx.js.org/assets/canva.png" align="center" width="100" title="Canva" alt="Canva" /></a>
 
-**🥈Silver sponsors (\$100+ pm):**<br/>
+**🥈 Silver sponsors (\$100+ pm):**<br/>
 <a href="https://www.codefirst.co.uk/"><img src="https://mobx.js.org/assets/codefirst.png" align="center" width="100" title="CodeFirst" alt="CodeFirst"/></a>
 <a href="https://www.dcslsoftware.com/"><img src="https://mobx.js.org/assets/dcsl.png" align="center" width="100" title="DCSL Software" alt="DCSL Software"/></a>
 <a href="https://www.bugsnag.com/platforms/react-error-reporting?utm_source=MobX&utm_medium=Website&utm_content=open-source&utm_campaign=2019-community&utm_term=20190913"><img src="https://mobx.js.org/assets/bugsnag.jpg" align="center" width="100" title="Bugsnag" alt="Bugsnag"/></a>
 <a href="https://curology.com/blog/tech"><img src="https://mobx.js.org/assets/curology.png" align="center" width="100" title="Curology" alt="Curology"/></a>
 <a href="https://modulz.app/"><img src="https://mobx.js.org/assets/modulz.png" align="center" width="100" title="Modulz" alt="Modulz"/></a>
 
-**🥉Bronze sponsors (\$500+ total contributions):**<br/>
+**🥉 Bronze sponsors (\$500+ total contributions):**<br/>
 <a href="https://mantro.net/jobs/warlock"><img src="https://mobx.js.org/assets/mantro.png" align="center" width="100" title="mantro GmbH" alt="mantro GmbH"></a>
 <a href="https://www.algolia.com/"><img src="https://mobx.js.org/assets/algolia.jpg" align="center" width="100" title="Algolia" alt="Algolia" /></a>
 <a href="https://talentplot.com/"><img src="https://mobx.js.org/assets/talentplot.png" align="center" width="100" title="talentplot" alt="talentplot"></a>
@@ -135,7 +137,7 @@ Changes in the observable state are propagated precisely to all _computations_ a
 
 This conceptual picture can be applied to the above example, or any other application using MobX.
 
-To learn about the core concepts of MobX using a larger example, check out [The gist of MobX](docs/the-gist-of-mobx.md) section, or take the [10 minute interactive introduction to MobX and React](https://mobx.js.org/getting-started).
+To learn about the core concepts of MobX using a larger example, check out [The gist of MobX](https://mobx.js.org/the-gist-of-mobx.html) section, or take the [10 minute interactive introduction to MobX and React](https://mobx.js.org/getting-started).
 The philosophy and benefits of the mental model provided by MobX are also described in great detail in the blog posts [UI as an afterthought](https://michel.codes/blogs/ui-as-an-afterthought) and [How to decouple state and UI (a.k.a. you don’t need componentWillMount)](https://hackernoon.com/how-to-decouple-state-and-ui-a-k-a-you-dont-need-componentwillmount-cc90b787aa37).
 
 <div class="cheat"><a href="https://gum.co/fSocU"><button title="Download the MobX 6 cheat sheet and sponsor the project">Download the MobX 6 cheat sheet</button></a></div>
@@ -168,7 +170,7 @@ Created by [Pavan Podila](https://twitter.com/pavanpodila) and [Michel Weststrat
 
 -   [Introduction to MobX & React in 2020](https://www.youtube.com/watch?v=pnhIJA64ByY) by Leigh Halliday, _17min_.
 -   [ReactNext 2016: Real World MobX](https://www.youtube.com/watch?v=Aws40KOx90U) by Michel Weststrate, _40min_, [slides](https://docs.google.com/presentation/d/1DrI6Hc2xIPTLBkfNH8YczOcPXQTOaCIcDESdyVfG_bE/edit?usp=sharing).
--   [CityJS 2020: MobX, from mutable to immutable, to observable data](https://www.youtube.com/watch?v=ZHxFrbK3VB0&feature=emb_logo) by Michel Weststrate, _30min_.
+-   [CityJS 2020: MobX, from mutable to immutable, to observable data](https://youtu.be/sP7dtZm_Wx0?t=27050) by Michel Weststrate, _30min_.
 -   [OpenSourceNorth: Practical React with MobX (ES5)](https://www.youtube.com/watch?v=XGwuM_u7UeQ) by Matt Ruby, _42min_.
 -   [HolyJS 2019: MobX and the unique symbiosis of predictability and speed](https://www.youtube.com/watch?v=NBYbBbjZeX4&list=PL8sJahqnzh8JJD7xahG5zXkjfM5GOgcPA&index=21&t=0s) by Michel Weststrate, _59min_.
 -   [React Amsterdam 2016: State Management Is Easy](https://www.youtube.com/watch?v=ApmSsu3qnf0&feature=youtu.be) by Michel Weststrate, _20min_, [slides](https://speakerdeck.com/mweststrate/state-management-is-easy-introduction-to-mobx).

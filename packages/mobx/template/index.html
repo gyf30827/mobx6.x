@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <script type="text/javascript" src="../dist/mobx.umd.development.js"></script>
+    <script>
+      const { observable , intercept, autorun, decorate, makeAutoObservable} = mobx;
+      makeAutoObservable
+      class A {
+        setA() {
+          this.a = 3333
+        }
+        name=111
+        a = 22
+        constructor() {
+          //  makeAutoObservable(this, {
+          //    a: false
+          //  })
+          makeAutoObservable(this)
+        }
+      }
+      const insA = new A();
+       autorun(() => {
+        console.log('autorun',insA.a)
+      })
+      console.log(11111,insA);
+      insA.setA();
+
+
+      // 数组
+      // const a = [1,2,3]
+      // const oa = observable(a);
+      // console.log(oa);
+
+
+      // proxy 非 proxy
+      // const a = {
+      //   // name: {
+      //   //   a: {
+      //   //     bb: 1111
+      //   //   }
+      //   // }
+      //   a: 1,
+      //   b: 2,
+      //   get sum () {
+      //     return this.a + this.b
+      //   }
+      // }
+      // const oa = observable(a, null, { 
+      //   proxy: false
+      //  });
+
+
+
+      // 装饰器
+      // const oa = observable(a, {
+      //   name: observable.ref
+      // })
+      // const oa = observable(a)
+      // 拦截器
+      // intercept(oa.name, (change) => {
+      //   console.log(111133)
+      //   return change;
+      // })
+      // autorun
+      // const a = {
+      //   name: 111,
+      //   a: 2
+      // }
+      // const oa = observable(a);
+      // autorun(() => {
+      //   console.log('======',oa.name, oa.a)
+      // })
+      // oa.a = 3333
+    </script>
+  </body>
+</html>
