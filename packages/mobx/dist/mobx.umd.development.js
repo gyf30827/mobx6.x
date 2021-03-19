@@ -4716,7 +4716,7 @@
 
       _proto.setObservablePropValue_ = function setObservablePropValue_(key, newValue) {
         var observable = this.values_.get(key);
-
+        console.log('setObservablePropValue_', observable, key)
         if (observable instanceof ComputedValue) {
           observable.set(newValue);
           return true;
@@ -5012,6 +5012,7 @@
               return false;
             }
           } else {
+            console.log(key,descriptor)
             defineProperty(this.target_, key, descriptor);
           }
 
@@ -5265,9 +5266,11 @@
     function getCachedObservablePropDescriptor(key) {
       return descriptorCache[key] || (descriptorCache[key] = {
         get: function get() {
+          console.log('defineProperty, get', key)
           return this[$mobx].getObservablePropValue_(key);
         },
         set: function set(value) {
+          console.log('defineProperty, set',key, value)
           return this[$mobx].setObservablePropValue_(key, value);
         }
       });

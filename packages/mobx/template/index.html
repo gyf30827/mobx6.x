@@ -6,26 +6,26 @@
     <script type="text/javascript" src="../dist/mobx.umd.development.js"></script>
     <script>
       const { observable , intercept, autorun, decorate, makeAutoObservable} = mobx;
-      makeAutoObservable
-      class A {
-        setA() {
-          this.a = 3333
-        }
-        name=111
-        a = 22
-        constructor() {
-          //  makeAutoObservable(this, {
-          //    a: false
-          //  })
-          makeAutoObservable(this)
-        }
-      }
-      const insA = new A();
-       autorun(() => {
-        console.log('autorun',insA.a)
-      })
-      console.log(11111,insA);
-      insA.setA();
+      // makeAutoObservable
+      // class A {
+      //   setA() {
+      //     this.a = 3333
+      //   }
+      //   name=111
+      //   a = 22
+      //   constructor() {
+      //     //  makeAutoObservable(this, {
+      //     //    a: false
+      //     //  })
+      //     makeAutoObservable(this)
+      //   }
+      // }
+      // const insA = new A();
+      //  autorun(() => {
+      //   console.log('autorun',insA.a)
+      // })
+      // console.log(11111,insA);
+      // insA.setA();
 
 
       // 数组
@@ -35,21 +35,23 @@
 
 
       // proxy 非 proxy
-      // const a = {
-      //   // name: {
-      //   //   a: {
-      //   //     bb: 1111
-      //   //   }
-      //   // }
-      //   a: 1,
-      //   b: 2,
-      //   get sum () {
-      //     return this.a + this.b
-      //   }
-      // }
-      // const oa = observable(a, null, { 
-      //   proxy: false
-      //  });
+      const a = {
+        // name: {
+        //   a: {
+        //     bb: 1111
+        //   }
+        // }
+        a: 1,
+        b: 2,
+        get sum () {
+          return this.a + this.b
+        }
+      }
+      const oa = observable(a, null, { 
+        proxy: false
+       });
+       oa.mm = 1111111;
+       console.log(oa);
 
 
 
